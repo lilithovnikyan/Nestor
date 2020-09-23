@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="icon" href=""/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/font-awesome.css">
+    <link rel="stylesheet" href="libs/css/dcalendar.picker.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <aside>
+        <div>
+            <div class="aside-title">
+                <img src="img/logo.png">
+            </div>
+            <ul>
+                <li>
+                    <a class="active" href="dashboard.html">
+                        <img class="aside-img-gray" src="img/aside/dashboard-gray.png">
+                        <img class="aside-img-blue" src="img/aside/dashboard-blue.png">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dialer.html">
+                        <img class="aside-img-gray" src="img/aside/dialer-gray.png">
+                        <img class="aside-img-blue" src="img/aside/dialer-blue.png">
+                        <span>Dialer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="team-home.html">
+                        <img class="aside-img-gray" src="img/aside/users-gray.png">
+                        <img class="aside-img-blue" src="img/aside/users-blue.png">
+                        <span>Team</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-calendar.html">
+                        <img class="aside-img-gray" src="img/aside/calendar-gray.png">
+                        <img class="aside-img-blue" src="img/aside/calendar-blue.png">
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <img class="aside-img-gray" src="img/aside/reports-gray.png">
+                        <img class="aside-img-blue" src="img/aside/reports-blue.png">
+                        <span>Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <img class="aside-img-gray" src="img/aside/user-gray.png">
+                        <img class="aside-img-blue" src="img/aside/user-blue.png">
+                        <span>Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul>
+            <li>
+                <a>
+                    <img class="aside-img-gray" src="img/aside/log-out.png">
+                    <img class="aside-img-blue" src="img/aside/log-out.png">
+                    <span>Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main-nav">
+        <input placeholder="Search">
+        <div class="dashboard-right-block">
+            <div class="notification-block">
+                <i class="fal fa-file-alt"></i>
+                <span class="doc-black"></span>
+            </div>
+            <div class="notification-block">
+                <i class="far fa-bell notification-call"></i>
+                <span></span>
+            </div>
+            <div class="dropdown">
+                <div class="main-drop-title dropdown-toggle dropdown-item-click" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div>
+                        <p> Nathan Mccoy </p>
+                        <p class="text-2">Admin</p>
+                    </div>
+                    <img src="img/dashboard/1/Usesrpic.png"><i class="fas fa-angle-down dropdown-item-icon"></i>
+                </div>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="toggle-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </main>
+    <section class="dashboard-block">
+        <div class="dashboard-block-1">
+            <p class="dashboard-block-1-title">Dashboard</p>
+            <div class="dashboard-block-1-center">
+                <div class="dropdown agent-people">
+                    <div class="dashboard-block-1-center-item dropdown-toggle" id="dropdownMenuButton-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/dashboard/icon-4.png">
+                        <p>Aggent Logged In</p>
+                        <span>25</span>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-3" id="agent-dropdown-2">
+                        <a class="dropdown-item" href="#"><img src="img/dashboard/1/Userpic-4.png">Matheu Gonzales</a>
+                        <a class="dropdown-item" href="#"><img src="img/dashboard/1/Userpic-3.png">Ketan Brown</a>
+                        <a class="dropdown-item" href="#"><img src="img/dashboard/1/Userpic-1.png">Anna Jonson</a>
+                        <a class="dropdown-item" href="#"><img src="img/dashboard/1/Userpic-4.png">Matheu Gonzales</a>
+                        <a class="dropdown-item" href="#"><img src="img/dashboard/1/Userpic-3.png">Ketan Brown</a>
+                    </div>
+                </div>
+                <div class="dropdown agent-people">
+                    <div class="dashboard-block-1-center-item dropdown-toggle" id="dropdownMenuButton-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/dashboard/icon-5.png">
+                        <p>Aggent Ready</p>
+                        <span>25</span>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-2" id="agent-dropdown">
+                        <a class="dropdown-item" href="#"><img src="img/dashboard/1/Userpic-4.png">Matheu Gonzales</a>
+                        <a class="dropdown-item" href="#"><img src="img/dashboard/1/Userpic-3.png">Ketan Brown</a>
+                        <a class="dropdown-item" href="#"><img src="img/dashboard/1/Userpic-1.png">Anna Jonson</a>
+                        <a class="dropdown-item" href="#"><img src="img/dashboard/1/Userpic-4.png">Matheu Gonzales</a>
+                        <a class="dropdown-item" href="#"><img src="img/dashboard/1/Userpic-3.png">Ketan Brown</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-block-1-select">
+                <select class="dashboard-block-1-select-item">
+                    <option>Today</option>
+                    <option>This Week</option>
+                    <option>This Month</option>
+                    <option>This Year</option>
+                </select>
+                <i class="fas fa-angle-down"></i>
+            </div>
+        </div>
+        <div class="dashboard-block-2">
+            <div class="dashboard-block-2-item">
+                <img src="img/dashboard/icon.png">
+                <span>274</span>
+                <p>Total Calls</p>
+            </div>
+            <div class="dashboard-block-2-item">
+                <img src="img/dashboard/icon-1.png">
+                <span>35</span>
+                <p>Missed Calls</p>
+            </div>
+            <div class="dashboard-block-2-item">
+                <img src="img/dashboard/icon-2.png">
+                <span>17.2%</span>
+                <p>Abandon Rate</p>
+            </div>
+            <div class="dashboard-block-2-item">
+                <img src="img/dashboard/icon-3.png">
+                <span>0:49</span>
+                <p>Avg Duration</p>
+            </div>
+        </div>
+        <div class="dashboard-block-3">
+            <div class="dashboard-block-3-content">
+                <div class="chart-title">
+                    <a class="chart-title-calls">Total Calls</a>
+                    <a class="text-1 open-data-picker">Reports<i class="fas fa-angle-right"></i></a>
+                </div>
+                <canvas id="linechart" width="400" height="320"></canvas>
+                <table id="calendar-demo" class="chart-calendar">
+                    <a class="more-info-calendar" href="call-story.html">More Info</a>
+                </table>
+            </div>
+            <div id="style-1" class="dashboard-block-3-right">
+                <div class="dashboard-block-3-title">
+                    <div class="pagination">
+                        <span>Task</span>
+                    </div>
+                    <a class="text-1" href="dashboard-calendar.html">Reports<i class="fas fa-angle-right"></i></a>
+                </div>
+                <div class="agent-tasks">
+                    <div class="agent-task-item agent-task-item-blue">
+                        <div class="agent-task-left">
+                            <div class="agent-line"></div>
+                        </div>
+                        <div class="agent-task-right">
+                            <div class="agent-task-right-top">
+                                <div>
+                                    <p class="agent-task-1">Call With Client</p>
+                                    <p class="agent-task-2">11:00 - 14:00</p>
+                                </div>
+                                <div class="agent-icon">
+                                    <i class="far fa-clone"></i>
+                                </div>
+                            </div>
+                            <div class="agent-task-right-bottom">
+                                <p class="agent-task-3">Number</p>
+                                <p class="agent-task-4">(760) 825-3655</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-task-item agent-task-item-green">
+                        <div class="agent-task-left">
+                            <div class="agent-line"></div>
+                        </div>
+                        <div class="agent-task-right">
+                            <div class="agent-task-right-top">
+                                <div>
+                                    <p class="agent-task-1">Call With Client</p>
+                                    <p class="agent-task-2">11:00 - 14:00</p>
+                                </div>
+                                <div class="agent-icon">
+                                    <i class="far fa-clone"></i>
+                                </div>
+                            </div>
+                            <div class="agent-task-right-bottom">
+                                <p class="agent-task-3">Number</p>
+                                <p class="agent-task-4">(760) 825-3655</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-task-item agent-task-item-red">
+                        <div class="agent-task-left">
+                            <div class="agent-line"></div>
+                        </div>
+                        <div class="agent-task-right">
+                            <div class="agent-task-right-top">
+                                <div>
+                                    <p class="agent-task-1">Call With Client</p>
+                                    <p class="agent-task-2">11:00 - 14:00</p>
+                                </div>
+                                <div class="agent-icon">
+                                    <i class="far fa-clone"></i>
+                                </div>
+                            </div>
+                            <div class="agent-task-right-bottom">
+                                <p class="agent-task-3">Number</p>
+                                <p class="agent-task-4">(760) 825-3655</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-task-item agent-task-item-lightBlue">
+                        <div class="agent-task-left">
+                            <div class="agent-line"></div>
+                        </div>
+                        <div class="agent-task-right">
+                            <div class="agent-task-right-top">
+                                <div>
+                                    <p class="agent-task-1">Call With Client</p>
+                                    <p class="agent-task-2">11:00 - 14:00</p>
+                                </div>
+                                <div class="agent-icon">
+                                    <i class="far fa-clone"></i>
+                                </div>
+                            </div>
+                            <div class="agent-task-right-bottom">
+                                <p class="agent-task-3">Number</p>
+                                <p class="agent-task-4">(760) 825-3655</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-task-item agent-task-item-yellow">
+                        <div class="agent-task-left">
+                            <div class="agent-line"></div>
+                        </div>
+                        <div class="agent-task-right">
+                            <div class="agent-task-right-top">
+                                <div>
+                                    <p class="agent-task-1">Call With Client</p>
+                                    <p class="agent-task-2">11:00 - 14:00</p>
+                                </div>
+                                <div class="agent-icon">
+                                    <i class="far fa-clone"></i>
+                                </div>
+                            </div>
+                            <div class="agent-task-right-bottom">
+                                <p class="agent-task-3">Number</p>
+                                <p class="agent-task-4">(760) 825-3655</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-task-item agent-task-item-black">
+                        <div class="agent-task-left">
+                            <div class="agent-line"></div>
+                        </div>
+                        <div class="agent-task-right">
+                            <div class="agent-task-right-top">
+                                <div>
+                                    <p class="agent-task-1">Call With Client</p>
+                                    <p class="agent-task-2">11:00 - 14:00</p>
+                                </div>
+                                <div class="agent-icon">
+                                    <i class="far fa-clone"></i>
+                                </div>
+                            </div>
+                            <div class="agent-task-right-bottom">
+                                <p class="agent-task-3">Number</p>
+                                <p class="agent-task-4">(760) 825-3655</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-task-item agent-task-item-blue">
+                        <div class="agent-task-left">
+                            <div class="agent-line"></div>
+                        </div>
+                        <div class="agent-task-right">
+                            <div class="agent-task-right-top">
+                                <div>
+                                    <p class="agent-task-1">Call With Client</p>
+                                    <p class="agent-task-2">11:00 - 14:00</p>
+                                </div>
+                                <div class="agent-icon">
+                                    <i class="far fa-clone"></i>
+                                </div>
+                            </div>
+                            <div class="agent-task-right-bottom">
+                                <p class="agent-task-3">Number</p>
+                                <p class="agent-task-4">(760) 825-3655</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-task-item agent-task-item-green">
+                        <div class="agent-task-left">
+                            <div class="agent-line"></div>
+                        </div>
+                        <div class="agent-task-right">
+                            <div class="agent-task-right-top">
+                                <div>
+                                    <p class="agent-task-1">Call With Client</p>
+                                    <p class="agent-task-2">11:00 - 14:00</p>
+                                </div>
+                                <div class="agent-icon">
+                                    <i class="far fa-clone"></i>
+                                </div>
+                            </div>
+                            <div class="agent-task-right-bottom">
+                                <p class="agent-task-3">Number</p>
+                                <p class="agent-task-4">(760) 825-3655</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-task-item agent-task-item-red">
+                        <div class="agent-task-left">
+                            <div class="agent-line"></div>
+                        </div>
+                        <div class="agent-task-right">
+                            <div class="agent-task-right-top">
+                                <div>
+                                    <p class="agent-task-1">Call With Client</p>
+                                    <p class="agent-task-2">11:00 - 14:00</p>
+                                </div>
+                                <div class="agent-icon">
+                                    <i class="far fa-clone"></i>
+                                </div>
+                            </div>
+                            <div class="agent-task-right-bottom">
+                                <p class="agent-task-3">Number</p>
+                                <p class="agent-task-4">(760) 825-3655</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-task-item agent-task-item-lightBlue">
+                        <div class="agent-task-left">
+                            <div class="agent-line"></div>
+                        </div>
+                        <div class="agent-task-right">
+                            <div class="agent-task-right-top">
+                                <div>
+                                    <p class="agent-task-1">Call With Client</p>
+                                    <p class="agent-task-2">11:00 - 14:00</p>
+                                </div>
+                                <div class="agent-icon">
+                                    <i class="far fa-clone"></i>
+                                </div>
+                            </div>
+                            <div class="agent-task-right-bottom">
+                                <p class="agent-task-3">Number</p>
+                                <p class="agent-task-4">(760) 825-3655</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="libs/js/jquery-3.3.1.min.js"></script>
+    <script src="libs/js/popper.min.js"></script>
+    <script src="libs/js/bootstrap.min.js"></script>
+    <script src="libs/js/chart.js"></script>
+    <script src="libs/js/dcalendar.picker.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

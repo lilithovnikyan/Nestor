@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="icon" href=""/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/font-awesome.css">
+    <link rel="stylesheet" href="libs/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/tail.datetime.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<style>
+    #tail-datetime-1 .calendar-timepicker {
+        display: none;
+    }
+    .tail-datetime-calendar {
+        background: white;
+        width: 300px;
+        margin-left: 60px;
+    }
+    #tail-datetime-1 .calendar-close {
+        display: none;
+    }
+    .tail-date-block {
+        height: 55px;
+    }
+    @media (max-width: 480px) {
+        .tail-datetime-calendar {
+            background: white;
+            width: 240px;
+            margin-left: 20px;
+        }
+    }
+</style>
+<body>
+    <aside>
+        <div>
+            <div class="aside-title">
+                <img src="img/logo.png">
+            </div>
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <img class="aside-img-gray" src="img/aside/dashboard-gray.png">
+                        <img class="aside-img-blue" src="img/aside/dashboard-blue.png">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dialer.html">
+                        <img class="aside-img-gray" src="img/aside/dialer-gray.png">
+                        <img class="aside-img-blue" src="img/aside/dialer-blue.png">
+                        <span>Dialer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="team-home.html">
+                        <img class="aside-img-gray" src="img/aside/users-gray.png">
+                        <img class="aside-img-blue" src="img/aside/users-blue.png">
+                        <span>Team</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-calendar.html">
+                        <img class="aside-img-gray" src="img/aside/calendar-gray.png">
+                        <img class="aside-img-blue" src="img/aside/calendar-blue.png">
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="reports.html">
+                        <img class="aside-img-gray" src="img/aside/reports-gray.png">
+                        <img class="aside-img-blue" src="img/aside/reports-blue.png">
+                        <span>Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <img class="aside-img-gray" src="img/aside/user-gray.png">
+                        <img class="aside-img-blue" src="img/aside/user-blue.png">
+                        <span>Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul>
+            <li>
+                <a>
+                    <img class="aside-img-gray" src="img/aside/log-out.png">
+                    <img class="aside-img-blue" src="img/aside/log-out.png">
+                    <span>Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main-nav">
+        <input placeholder="Search">
+        <div class="dashboard-right-block">
+            <div class="notification-block">
+                <i class="far fa-bell notification-call"></i>
+                <span></span>
+            </div>
+            <div class="dropdown">
+                <div class="main-drop-title dropdown-toggle dropdown-item-click" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div>
+                        <p> Nathan Mccoy </p>
+                        <p class="text-2">Admin</p>
+                    </div>
+                    <img src="img/dashboard/1/Usesrpic.png"><i class="fas fa-angle-down dropdown-item-icon"></i>
+                </div>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="toggle-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </main>
+    <section class="dashboard-block">
+        <div class="dashboard-block-1">
+            <div class="pagination-block">
+                <p class="pagination-text-1">Reports</p>
+            </div>
+            <div class="start-dial-header">
+                <div class="start-dial">
+                    <a class="team-block-2" href="sending-story.html">Share Files</a>
+                </div>
+                <div class="start-dial">
+                    <a class="start-btn" href="caller-id.html">Caller Id</a>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-reports-block">
+            <div class="tail-date-block" id="viewDropdown-2">
+                <input type="text" id="reportCalendar" class="demo tail-date-input">
+                <div id="datetime-demo-holder" class="datetime-folder"></div>
+            </div>
+            <div class="circle-chart circle-chart-1">
+                <div class="circle-chart-header">Total Call Time</div>
+                <div class="circle-content">
+                    <svg id="dog" viewBox="0 0 100 100">
+                        <circle id="c3" r="25" cx="50" cy="50" />
+                        <circle id="c2" r="25" cx="50" cy="50" />
+                        <circle id="c1" r="25" cx="50" cy="50" />
+                    </svg>
+                    <div class="circle-numbers">
+                        <p class="chart-text-1">3.7<span>Hours</span></p>
+                        <p class="chart-text-2"><span class="chart-yellow"></span>Total Talk Time</p>
+                        <p class="chart-text-2"><span class="chart-red"></span>Pause Talk Time</p>
+                        <p class="chart-text-2"><span class="chart-other"></span>Other</p>
+                    </div>
+                </div>
+            </div>
+            <div class="total-talk-time">
+                <div class="chart-text-3">Total Talk Time</div>
+                <p class="chart-text-1">1.8<span>Hours</span></p>
+                <div class="chart-text-3">Calls Connected</div>
+                <p class="chart-text-1">178<span>Calls</span></p>
+                <div class="chart-text-3">Average Talk Time</div>
+                <p class="chart-text-1">36.4<span>Seconds</span></p>
+            </div>
+            <div class="circle-chart">
+                <div class="circle-chart-header">Calls Made</div>
+                <div class="circle-content">
+                    <svg id="dog" viewBox="0 0 100 100">
+                        <circle id="c3" r="25" cx="50" cy="50" />
+                        <circle id="c2" r="25" cx="50" cy="50" />
+                        <circle id="c1" r="25" cx="50" cy="50" />
+                    </svg>
+                    <div class="circle-numbers">
+                        <p class="chart-text-1">194<span>Calls</span></p>
+                        <p class="chart-text-2"><span class="chart-yellow"></span>Calls Connected</p>
+                        <p class="chart-text-2"><span class="chart-red"></span>Calls Scrubbled Out (No Data)</p>
+                        <p class="chart-text-2"><span class="chart-other"></span>Other</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="report-block-1"></div>
+        <div class="dashboard-block-7">
+            <div class="pagination-block">
+                <p class="pagination-text-1">Sending Story</p>
+                <div class="pagination">
+                    <a class="left-pagination" href="#"><i class="fas fa-angle-left"></i></a>
+                    <a class="right-pagination" href="#"><i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div class="start-dial-header">
+                <a class="dial-cancel-btn header-hide-btn">Select all</a>
+                <a class="dial-delete-btn header-hide-btn"><i class="far fa-trash-alt"></i>Delete</a>
+                <a class="dial-archive-btn header-hide-btn"><img src="img/dialer/archive-icon.png">Archive</a>
+                <div class="dashboard-block-1-select">
+                    <select class="dashboard-block-1-select-item" onChange="window.location.href=this.value">
+                        <option value="reports.html">Last</option>
+                        <option value="call-story.html">All</option>
+                        <option value="reports.html">Trash</option>
+                        <option value="reports.html">Archive</option>
+                    </select>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-block-8" id="call-list-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Call Started At</th>
+                        <th>Agent</th>
+                        <th>Phone Number</th>
+                        <th>Total Talk Time</th>
+                        <th>Paused Talk Time</th>
+                        <th>Wait Time</th>
+                        <th>Voicemain</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="check-list">
+                            <label class="container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            9/18/2020 6:18:47 PM
+                        </div>
+                    </td>
+                    <td>Adam Wiiliams</td>
+                    <td>(308) 555-0121</td>
+                    <td>00:01:00</td>
+                    <td>00:01:00</td>
+                    <td>05:01:00</td>
+                    <td>
+                        <audio controls>
+                            <source src="audio/meditation.mp3" type="audio/ogg">
+                            <source src="audio/meditation.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="check-list">
+                            <label class="container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            9/18/2020 6:18:47 PM
+                        </div>
+                    </td>
+                    <td>Anna Jonson</td>
+                    <td>(308) 555-0121</td>
+                    <td>00:01:00</td>
+                    <td>00:01:00</td>
+                    <td>05:01:00</td>
+                    <td>
+                        <audio controls>
+                            <source src="audio/meditation.mp3" type="audio/ogg">
+                            <source src="audio/meditation.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="check-list">
+                            <label class="container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            9/18/2020 6:18:47 PM
+                        </div>
+                    </td>
+                    <td>Bot Smit</td>
+                    <td>(308) 555-0121</td>
+                    <td>00:01:00</td>
+                    <td>00:01:00</td>
+                    <td>05:01:00</td>
+                    <td>
+                        <audio controls>
+                            <source src="audio/meditation.mp3" type="audio/ogg">
+                            <source src="audio/meditation.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="check-list">
+                            <label class="container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            9/18/2020 6:18:47 PM
+                        </div>
+                    </td>
+                    <td>Anna Jonson</td>
+                    <td>(308) 555-0121</td>
+                    <td>00:01:00</td>
+                    <td>00:01:00</td>
+                    <td>05:01:00</td>
+                    <td>
+                        <audio controls>
+                            <source src="audio/meditation.mp3" type="audio/ogg">
+                            <source src="audio/meditation.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="check-list">
+                            <label class="container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            9/18/2020 6:18:47 PM
+                        </div>
+                    </td>
+                    <td>Bot Smit</td>
+                    <td>(308) 555-0121</td>
+                    <td>00:01:00</td>
+                    <td>00:01:00</td>
+                    <td>05:01:00</td>
+                    <td>
+                        <audio controls>
+                            <source src="audio/meditation.mp3" type="audio/ogg">
+                            <source src="audio/meditation.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="check-list">
+                            <label class="container">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            9/18/2020 6:18:47 PM
+                        </div>
+                    </td>
+                    <td>Bot Smit</td>
+                    <td>(308) 555-0121</td>
+                    <td>00:01:00</td>
+                    <td>00:01:00</td>
+                    <td>05:01:00</td>
+                    <td>
+                        <audio controls>
+                            <source src="audio/meditation.mp3" type="audio/ogg">
+                            <source src="audio/meditation.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <script src="libs/js/jquery-3.3.1.min.js"></script>
+    <script src="libs/js/popper.min.js"></script>
+    <script src="libs/js/bootstrap.min.js"></script>
+    <script src="libs/js/owl.carousel.min.js"></script>
+    <script src="js/tail-datetime.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        tail.DateTime("#reportCalendar", {
+            dateRanges: [
+                {
+                    start: new Date(2018, 0, 5),
+                    end: new Date(2018, 0, 7)
+                },
+                {
+                    start: new Date(2018, 1, 1),
+                    end: new Date(2018, 1, 28),
+                    days: ["SUN", "SAT"]
+                },
+                {
+                    days: ["SUN"]
+                }
+            ],
+            startOpen: true,
+            stayOpen: true
+        });
+        var today = new Date();
+        var dd = String(today.getDate() + 1).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+
+        today = mm + '/' + dd + '/' + yyyy + ' ' + '00:00:00';
+        document.getElementById('reportCalendar').value = today;
+    </script>
+</body>
+</html>

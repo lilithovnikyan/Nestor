@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="icon" href=""/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/font-awesome.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <section class="login-section">
+         <form class="login-form">
+            <div class="login-header">
+                <img src="img/login-logo.png">
+            </div>
+             <div class="login-content">
+                <p class="login-text-1">Sign In</p>
+                 <div class="login-block-1">
+                     <label>Email</label>
+                     <input placeholder="You@example.com">
+                 </div>
+                 <div class="login-block-1">
+                     <label>Password </label>
+                     <input placeholder="Enter you password" type="password">
+                 </div>
+                 <div class="login-block-2">
+                    <div>
+                        <input type="checkbox" id="keep">
+                        <label for="keep" class="login-text-3">Keep me logged in</label><br>
+                    </div>
+                     <a class="btn-forgot-pass" href="forgot.html">Forgot password?</a>
+                 </div>
+                 <a class="btn-login" href="dashboard.html">Sign In</a>
+                 <div>
+                     <span class="login-text-3">Don’t have an account?</span><a class="login-text-2" href="register.html">Sign Up</a>
+                 </div>
+             </div>
+             <div class="login-footer">
+                 <img src="img/login-logo-2.png">
+             </div>
+         </form>
+     </section>
+    <script src="libs/js/jquery-3.3.1.min.js"></script>
+    <script src="libs/js/popper.min.js"></script>
+    <script src="libs/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+<link rel="stylesheet" href="libs/css/bootstrap.min.css">
+<link href="https://select2.github.io/select2-bootstrap-theme/css/select2-bootstrap.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css" rel="stylesheet" />
+
+<script src="libs/js/jquery-3.3.1.min.js"></script>
+<script src="libs/js/popper.min.js"></script>
+<script src="libs/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.full.min.js"></script>
+<script>
+    $( ".select2-multiple" ).select2({
+        theme: "bootstrap",
+        placeholder: "Select a State",
+        maximumSelectionSize: 6,
+        containerCssClass: ':all:'
+    });
+</script>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="icon" href=""/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/font-awesome.css">
+    <link rel="stylesheet" href="libs/css/dcalendar.picker.css">
+    <link href='packages/core/main.css' rel='stylesheet'>
+    <link href='packages/daygrid/main.css' rel='stylesheet'>
+    <link href='packages/timegrid/main.css' rel='stylesheet'>
+    <link href='packages/list/main.css' rel='stylesheet'>
+    <link rel="stylesheet" href="libs/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/tail.datetime.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<aside>
+    <div>
+        <div class="aside-title">
+            <img src="img/logo.png">
+        </div>
+        <ul>
+            <li>
+                <a class="active" href="dashboard.html">
+                    <img class="aside-img-gray" src="img/aside/dashboard-gray.png">
+                    <img class="aside-img-blue" src="img/aside/dashboard-blue.png">
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="dialer.html">
+                    <img class="aside-img-gray" src="img/aside/dialer-gray.png">
+                    <img class="aside-img-blue" src="img/aside/dialer-blue.png">
+                    <span>Dialer</span>
+                </a>
+            </li>
+            <li>
+                <a href="team-home.html">
+                    <img class="aside-img-gray" src="img/aside/users-gray.png">
+                    <img class="aside-img-blue" src="img/aside/users-blue.png">
+                    <span>Team</span>
+                </a>
+            </li>
+            <li>
+                <a href="dashboard-calendar.html">
+                    <img class="aside-img-gray" src="img/aside/calendar-gray.png">
+                    <img class="aside-img-blue" src="img/aside/calendar-blue.png">
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li>
+                <a href="reports.html">
+                    <img class="aside-img-gray" src="img/aside/reports-gray.png">
+                    <img class="aside-img-blue" src="img/aside/reports-blue.png">
+                    <span>Reports</span>
+                </a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <img class="aside-img-gray" src="img/aside/user-gray.png">
+                    <img class="aside-img-blue" src="img/aside/user-blue.png">
+                    <span>Profile</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <ul>
+        <li>
+            <a>
+                <img class="aside-img-gray" src="img/aside/log-out.png">
+                <img class="aside-img-blue" src="img/aside/log-out.png">
+                <span>Log Out</span>
+            </a>
+        </li>
+    </ul>
+</aside>
+<main class="main-nav">
+    <input placeholder="Search">
+    <div class="dashboard-right-block">
+        <div class="notification-block">
+            <i class="far fa-bell notification-call"></i>
+            <span></span>
+        </div>
+        <div class="dropdown">
+            <div class="main-drop-title dropdown-toggle dropdown-item-click" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div>
+                    <p> Nathan Mccoy </p>
+                    <p class="text-2">Admin</p>
+                </div>
+                <img src="img/dashboard/1/Usesrpic.png"><i class="fas fa-angle-down dropdown-item-icon"></i>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Log Out</a>
+            </div>
+        </div>
+    </div>
+    <div class="toggle-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+</main>
+<section class="dashboard-block">
+    <div class="dashboard-block-10" style="display: flex;">
+        <div class="pagination-block">
+            <p class="pagination-text-1">Call Story</p>
+        </div>
+        <div class="start-dial-header">
+            <div class="calendar-block mb-0">
+                <div class="tail-date-block" id="viewDropdown-2">
+                    <input type="text" id="demo" class="demo tail-date-input">
+                    <div id="datetime-demo-holder" class="datetime-folder"></div>
+                </div>
+            </div>
+            <a class="calling-btn mt-0" href="call-story.html">Total Calls</a>
+            <a class="calling-to-dashboard-btn mt-0" href="dashboard.html">Back To Dashboard<i class="fas fa-angle-right"></i></a>
+        </div>
+    </div>
+    <div class="dashboard-block-11 missed-calls" id="call-list-table-2" style="display: flex;">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Call Started At</th>
+                <th>Phone Number</th>
+                <th>Total Talk Time</th>
+                <th>Wait Time</th>
+                <th>Zip Code</th>
+                <th>City</th>
+                <th>Number Of Calls</th>
+                <th>Answered</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <div class="check-list">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        9/18/2020 6:18:47 PM
+                    </div>
+                </td>
+                <td>(308) 555-0121</td>
+                <td>00:01:00</td>
+                <td>05:01:00</td>
+                <td>900-961</td>
+                <td>California</td>
+                <td>04</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="check-list">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        9/18/2020 6:18:47 PM
+                    </div>
+                </td>
+                <td>(308) 555-0121</td>
+                <td>00:01:00</td>
+                <td>05:01:00</td>
+                <td>75-79</td>
+                <td>Arizona</td>
+                <td>04</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="check-list">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        9/18/2020 6:18:47 PM
+                    </div>
+                </td>
+                <td>(308) 555-0121</td>
+                <td>00:01:00</td>
+                <td>05:01:00</td>
+                <td>705-79</td>
+                <td>New Mwxico</td>
+                <td>04</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="check-list">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        9/18/2020 6:18:47 PM
+                    </div>
+                </td>
+                <td>(308) 555-0121</td>
+                <td>00:01:00</td>
+                <td>05:01:00</td>
+                <td>125-79</td>
+                <td>Arizona</td>
+                <td>04</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="check-list">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        9/18/2020 6:18:47 PM
+                    </div>
+                </td>
+                <td>(308) 555-0121</td>
+                <td>00:01:00</td>
+                <td>05:01:00</td>
+                <td>75-79</td>
+                <td>California</td>
+                <td>04</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="check-list">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        9/18/2020 6:18:47 PM
+                    </div>
+                </td>
+                <td>(308) 555-0121</td>
+                <td>00:01:00</td>
+                <td>05:01:00</td>
+                <td>889-899</td>
+                <td>Nevada</td>
+                <td>04</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="check-list">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        9/18/2020 6:18:47 PM
+                    </div>
+                </td>
+                <td>(308) 555-0121</td>
+                <td>00:01:00</td>
+                <td>05:01:00</td>
+                <td>889-899</td>
+                <td>California</td>
+                <td>04</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="check-list">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        9/18/2020 6:18:47 PM
+                    </div>
+                </td>
+                <td>(308) 555-0121</td>
+                <td>00:01:00</td>
+                <td>05:01:00</td>
+                <td>85-86</td>
+                <td>California</td>
+                <td>04</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="check-list">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        9/18/2020 6:18:47 PM
+                    </div>
+                </td>
+                <td>(308) 555-0121</td>
+                <td>00:01:00</td>
+                <td>05:01:00</td>
+                <td>85-86</td>
+                <td>Nevada</td>
+                <td>04</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="check-list">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        9/18/2020 6:18:47 PM
+                    </div>
+                </td>
+                <td>(308) 555-0121</td>
+                <td>00:01:00</td>
+                <td>05:01:00</td>
+                <td>85-86</td>
+                <td>Nevada</td>
+                <td>04</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="check-list">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        9/18/2020 6:18:47 PM
+                    </div>
+                </td>
+                <td>(308) 555-0121</td>
+                <td>00:01:00</td>
+                <td>05:01:00</td>
+                <td>85-86</td>
+                <td>Nevada</td>
+                <td>04</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="check-list">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        9/18/2020 6:18:47 PM
+                    </div>
+                </td>
+                <td>(308) 555-0121</td>
+                <td>00:01:00</td>
+                <td>05:01:00</td>
+                <td>85-86</td>
+                <td>Nevada</td>
+                <td>04</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="check-list">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        9/18/2020 6:18:47 PM
+                    </div>
+                </td>
+                <td>(308) 555-0121</td>
+                <td>00:01:00</td>
+                <td>05:01:00</td>
+                <td>85-86</td>
+                <td>Nevada</td>
+                <td>04</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="check-list">
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        9/18/2020 6:18:47 PM
+                    </div>
+                </td>
+                <td>(308) 555-0121</td>
+                <td>00:01:00</td>
+                <td>05:01:00</td>
+                <td>85-86</td>
+                <td>Nevada</td>
+                <td>04</td>
+                <td>No</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="dialer-block-1">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li><i class="fas fa-angle-right"></i></li>
+        </ul>
+    </div>
+
+</section>
+
+
+<script src="libs/js/jquery-3.3.1.min.js"></script>
+<script src="libs/js/popper.min.js"></script>
+<script src="libs/js/bootstrap.min.js"></script>
+<script src='packages/core/main.js'></script>
+<script src='packages/interaction/main.js'></script>
+<script src='packages/daygrid/main.js'></script>
+<script src='packages/timegrid/main.js'></script>
+<script src='packages/list/main.js'></script>
+<script src="libs/js/owl.carousel.min.js"></script>
+<script src="js/tail-datetime.js"></script>
+<script src="js/main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list' ],
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+            },
+            defaultDate: '2020-05-12',
+            navLinks: true, // can click day/week names to navigate views
+            businessHours: true, // display business hours
+            editable: true,
+            events: [
+                {
+                    title: 'Business Lunch',
+                    start: '2020-05-03T13:00:00',
+                    constraint: 'businessHours'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2020-05-13T11:00:00',
+                    constraint: 'availableForMeeting', // defined below
+                    color: '#257e4a'
+                },
+                {
+                    title: 'Conference',
+                    start: '2020-05-18',
+                    end: '2020-05-20'
+                },
+                {
+                    title: 'Party',
+                    start: '2020-05-29T20:00:00'
+                },
+
+                // areas where "Meeting" must be dropped
+                {
+                    groupId: 'availableForMeeting',
+                    start: '2020-05-11T10:00:00',
+                    end: '2020-05-11T16:00:00',
+                    rendering: 'background'
+                },
+                {
+                    groupId: 'availableForMeeting',
+                    start: '2020-05-13T10:00:00',
+                    end: '2020-05-13T16:00:00',
+                    rendering: 'background'
+                },
+
+                // red areas where no events can be dropped
+                {
+                    start: '2020-05-24',
+                    end: '2020-05-28',
+                    overlap: false,
+                    rendering: 'background',
+                    color: '#ff9f89'
+                },
+                {
+                    start: '2020-05-06',
+                    end: '2020-05-08',
+                    overlap: false,
+                    rendering: 'background',
+                    color: '#ff9f89'
+                }
+            ]
+        });
+
+        calendar.render();
+    });
+</script>
+</body>
+</html>

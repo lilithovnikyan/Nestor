@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="icon" href=""/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/font-awesome.css">
+    <link rel="stylesheet" href="libs/css/dcalendar.picker.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <aside>
+        <div>
+            <div class="aside-title">
+                <img src="img/logo.png">
+            </div>
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <img class="aside-img-gray" src="img/aside/dashboard-gray.png">
+                        <img class="aside-img-blue" src="img/aside/dashboard-blue.png">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dialer.html">
+                        <img class="aside-img-gray" src="img/aside/dialer-gray.png">
+                        <img class="aside-img-blue" src="img/aside/dialer-blue.png">
+                        <span>Dialer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="team-home.html">
+                        <img class="aside-img-gray" src="img/aside/users-gray.png">
+                        <img class="aside-img-blue" src="img/aside/users-blue.png">
+                        <span>Team</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-calendar.html">
+                        <img class="aside-img-gray" src="img/aside/calendar-gray.png">
+                        <img class="aside-img-blue" src="img/aside/calendar-blue.png">
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <img class="aside-img-gray" src="img/aside/reports-gray.png">
+                        <img class="aside-img-blue" src="img/aside/reports-blue.png">
+                        <span>Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="profile.html">
+                        <img class="aside-img-gray" src="img/aside/user-gray.png">
+                        <img class="aside-img-blue" src="img/aside/user-blue.png">
+                        <span>Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul>
+            <li>
+                <a>
+                    <img class="aside-img-gray" src="img/aside/log-out.png">
+                    <img class="aside-img-blue" src="img/aside/log-out.png">
+                    <span>Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main-nav">
+        <input placeholder="Search">
+        <div class="dashboard-right-block">
+            <div class="notification-block">
+                <i class="far fa-bell notification-call"></i>
+                <span></span>
+            </div>
+            <div class="dropdown">
+                <div class="main-drop-title dropdown-toggle dropdown-item-click" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div>
+                        <p> Nathan Mccoy </p>
+                        <p class="text-2">Admin</p>
+                    </div>
+                    <img src="img/dashboard/1/Usesrpic.png"><i class="fas fa-angle-down dropdown-item-icon"></i>
+                </div>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="toggle-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </main>
+    <section class="dashboard-block">
+        <div class="dashboard-block-1">
+            <p class="dashboard-block-1-title">Profile</p>
+        </div>
+        <div class="dashboard-block-5">
+            <div class="dashboard-block-5-left">
+                <div class="dashboard-block-5-left-content">
+                    <form class="profile-form">
+                        <div class="profile-form-item">
+                            <div>
+                                <label>First Name</label>
+                                <input class="profile-input-1" placeholder="Adam" readonly>
+                            </div>
+                            <div>
+                                <label>Last Name</label>
+                                <input class="profile-input-1" placeholder="Williams" readonly>
+                            </div>
+                        </div>
+                        <div class="profile-form-item">
+                            <div class="profile-form-item-inside">
+                                <div class="profile-form-abs-element">
+                                    <label>Age</label>
+                                    <input class="profile-input-1 rel-input-elem" type="date" placeholder="05/25/1996" value="2017-06-01" readonly>
+                                    <div class="abs-input-elem">25</div>
+                                </div>
+                                <div>
+                                    <label>Title</label>
+                                    <input class="profile-input-1" placeholder="Admin" readonly>
+                                </div>
+                            </div>
+                            <div class="profile-form-item-inside">
+                                <div class="register-gender">
+                                    <div class="profile-form-abs-element">
+                                        <label>Gender</label>
+                                        <div class="gender-block">
+                                            <div>
+                                                <input type="radio" id="male" name="gender" value="male">
+                                                <label for="male">Male</label><br>
+                                            </div>
+                                            <div class="abs-input-elem"><i class="fas fa-mars"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-form-abs-element">
+                                        <label> </label>
+                                        <div class="gender-block">
+                                            <div>
+                                                <input type="radio" id="female" name="gender" value="female">
+                                                <label for="female">Female</label><br>
+                                            </div>
+                                            <div class="abs-input-elem"><i class="fas fa-venus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-form-item">
+                            <div>
+                                <label>Phone Number</label>
+                                <input class="profile-input-1" placeholder="(000) 000-0000" readonly>
+                            </div>
+                            <div>
+                                <label>Email</label>
+                                <input class="profile-input-1" placeholder="anna_jonson@gmail.com" readonly>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="button-profile">
+                    <div class="button-profile-right">
+                        <a class="cancel-btn cancel-save-hide">Cancel</a>
+                        <a class="save-btn cancel-save-hide">Save</a>
+                        <a class="edit-tbn edit-profile-open">Edit Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-block-5-right">
+                <a class="dashboard-block-5-right-item">
+                    <label for="img-photo">
+                        <img src="img/dashboard/img-1.png">
+                        <button class="dashboard-block-5-right-photo">Upload New Photo</button>
+                    </label>
+                    <input id="img-photo" type="file">
+                </a>
+                <div class="dashboard-block-5-btns old-password-hide">
+                    <label>Old Password</label>
+                    <input class="profile-input-1" placeholder="******" type="password">
+                    <i class="fas fa-eye-slash"></i>
+                </div>
+                <div class="dashboard-block-5-btns old-password-hide">
+                    <label>New Password</label>
+                    <input class="profile-input-1" placeholder="******" type="password">
+                    <i class="fas fa-eye-slash"></i>
+                </div>
+                <div class="dashboard-block-5-btns current-password-open">
+                    <label>Password</label>
+                    <input class="profile-input-1" placeholder="******" type="password" readonly>
+                    <i class="fas fa-eye-slash"></i>
+                </div>
+                <a class="password-cancel-btn password-cancel-hide">Cancel</a>
+                <a class="password-save-btn password-cancel-hide">Save</a>
+                <a class="change-btn change-password-open">Change Password</a>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="deleteAgent" tabindex="-1" role="dialog" aria-labelledby="deleteAgentTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered delete-modal-dialog" role="document">
+            <div class="modal-content delete-modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteAgentTitle">Delete Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="delete-text-1">Are you sure you want to delete your account?</p>
+                    <p class="delete-text-2">If you delete your account,you will permanently lose your profile.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="member-text-3" data-dismiss="modal">Cancel</button>
+                    <button class="member-text-4">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade delete-agent-modal" id="profileSuccessfulyAdded" tabindex="-1" role="dialog" aria-labelledby="profileSuccessfulyAddedTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="profileSuccessfulyAddedTitle">Profile Successfuly Added</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="suggested-block">
+                    <p class="suggested-text">Eccount Email</p>
+                    <input class="eccount-search" placeholder="anna_jonson@gmail.com">
+                    <p class="suggested-text">Eccount Password</p>
+                    <input class="eccount-search" placeholder="125Ab547">
+                </div>
+                <div class="modal-footer">
+                    <button class="member-text-4" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="libs/js/jquery-3.3.1.min.js"></script>
+    <script src="libs/js/popper.min.js"></script>
+    <script src="libs/js/bootstrap.min.js"></script>
+    <script src="libs/js/chart.js"></script>
+    <script src="libs/js/dcalendar.picker.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

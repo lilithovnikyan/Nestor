@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="icon" href=""/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/css/font-awesome.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <aside>
+        <div>
+            <div class="aside-title">
+                <img src="img/logo.png">
+            </div>
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <img class="aside-img-gray" src="img/aside/dashboard-gray.png">
+                        <img class="aside-img-blue" src="img/aside/dashboard-blue.png">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active"  href="dialer.html">
+                        <img class="aside-img-gray" src="img/aside/dialer-gray.png">
+                        <img class="aside-img-blue" src="img/aside/dialer-blue.png">
+                        <span>Dialer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="team-home.html">
+                        <img class="aside-img-gray" src="img/aside/users-gray.png">
+                        <img class="aside-img-blue" src="img/aside/users-blue.png">
+                        <span>Team</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-calendar.html">
+                        <img class="aside-img-gray" src="img/aside/calendar-gray.png">
+                        <img class="aside-img-blue" src="img/aside/calendar-blue.png">
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <img class="aside-img-gray" src="img/aside/reports-gray.png">
+                        <img class="aside-img-blue" src="img/aside/reports-blue.png">
+                        <span>Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <img class="aside-img-gray" src="img/aside/user-gray.png">
+                        <img class="aside-img-blue" src="img/aside/user-blue.png">
+                        <span>Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul>
+            <li>
+                <a>
+                    <img class="aside-img-gray" src="img/aside/log-out.png">
+                    <img class="aside-img-blue" src="img/aside/log-out.png">
+                    <span>Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="main-nav">
+        <input placeholder="Search">
+        <div class="dashboard-right-block">
+            <div class="notification-block">
+                <i class="far fa-bell notification-call"></i>
+                <span></span>
+            </div>
+            <div class="dropdown">
+                <div class="main-drop-title dropdown-toggle dropdown-item-click" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div>
+                        <p> Nathan Mccoy </p>
+                        <p class="text-2">Admin</p>
+                    </div>
+                    <img src="img/dashboard/1/Usesrpic.png"><i class="fas fa-angle-down dropdown-item-icon"></i>
+                </div>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="toggle-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </main>
+    <section class="dashboard-block">
+        <div class="dashboard-block-1">
+            <div class="pagination-block">
+                <p class="pagination-text-1">Team</p>
+            </div>
+            <div class="start-dial-header">
+                <div class="start-dial">
+                    <a class="start-btn" data-toggle="modal" data-target="#deleteTeamMember">Create Group +</a>
+                </div>
+            </div>
+        </div>
+        <div class="chat-block">
+            <div class="chat-block-left">
+                <div class="chat-input">
+                    <input placeholder="Search People">
+                </div>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                            <i class="fal fa-comments-alt"></i>
+                            Chats
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                            <i class="far fa-phone-alt"></i>
+                            Calls
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                            <i class="fal fa-bell"></i>
+                            Notifications
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent2">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-2.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-3.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-4.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-4.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-1.png">
+                                <span class="span-red"></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-3.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-4.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-2.png">
+                                <span class="span-red"></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-3.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-4.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-2.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-3.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-4.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-4.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-1.png">
+                                <span class="span-red"></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-3.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-4.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-2.png">
+                                <span class="span-red"></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-3.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-4.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-2.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-3.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-4.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-4.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-1.png">
+                                <span class="span-red"></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-3.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-4.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-2.png">
+                                <span class="span-red"></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-3.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                        <div class="item worker-list">
+                            <div class="chat-item">
+                                <img src="img/dashboard/img-4.png">
+                                <span></span>
+                                <div>
+                                    <p class="worker-text-1">Adam Williams</p>
+                                    <p class="worker-text-2">Worker</p>
+                                </div>
+                            </div>
+                            <a class="">
+                                <i class="far fa-phone-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-block-right">
+
+            </div>
+        </div>
+    </section>
+    <div class="modal fade delete-team-member-modal chat-delete" id="deleteTeamMember" tabindex="-1" role="dialog" aria-labelledby="deleteTeamMemberTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">New Group Chat</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="chat-text-4">Attach Photo</p>
+                    <div class="register-upload-block">
+                        <label class="register-camera-abs" for="img-photo-2">
+                            <input class="register-upload-photo" placeholder="Upload Photo+" readonly="">
+                            <div class="abs-camera-elem"><i class="fas fa-camera"></i></div>
+                        </label>
+                        <input id="img-photo-2" class="camera-file" type="file">
+                    </div>
+                    <p class="chat-text-4">Name Of Group</p>
+                    <input class="chat-group-name" placeholder="Name Of Group">
+                </div>
+                <div class="modal-footer border-0">
+                    <button class="member-text-3" data-dismiss="modal">Cancel</button>
+                    <button class="member-text-4" data-dismiss="modal" data-toggle="modal" data-target="#createNewGroupChat">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade delete-agent-modal" id="createNewGroupChat" tabindex="-1" role="dialog" aria-labelledby="createNewGroupChatTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createNewGroupChatTitle">Create New Group</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="suggested-block">
+                    <p class="suggested-text">Suggested</p>
+                    <input class="suggested-search" placeholder="Search People">
+                    <div class="suggested-list">
+                        <div class="suggested-list-left">
+                            <div class="position-relative">
+                                <img src="img/our-team/Userpic-6.png">
+                                <span class="suggested-list-green"></span>
+                            </div>
+                            <div>
+                                <p>Adam Williams</p>
+                                <p>Also I’m Going for...</p>
+                            </div>
+                        </div>
+                        <div class="suggested-list-right">
+                            <label class="container">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="suggested-list">
+                        <div class="suggested-list-left">
+                            <div class="position-relative">
+                                <img src="img/our-team/Userpic-5.png">
+                                <span class="suggested-list-red"></span>
+                            </div>
+                            <div>
+                                <p>Adam Williams</p>
+                                <p>Also I’m Going for...</p>
+                            </div>
+                        </div>
+                        <div class="suggested-list-right">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="suggested-list">
+                        <div class="suggested-list-left">
+                            <div class="position-relative">
+                                <img src="img/our-team/Userpic-4.png">
+                                <span class="suggested-list-green"></span>
+                            </div>
+                            <div>
+                                <p>Adam Williams</p>
+                                <p>Also I’m Going for...</p>
+                            </div>
+                        </div>
+                        <div class="suggested-list-right">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="suggested-list">
+                        <div class="suggested-list-left">
+                            <div class="position-relative">
+                                <img src="img/our-team/Userpic-3.png">
+                                <span class="suggested-list-green"></span>
+                            </div>
+                            <div>
+                                <p>Adam Williams</p>
+                                <p>Also I’m Going for...</p>
+                            </div>
+                        </div>
+                        <div class="suggested-list-right">
+                            <label class="container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="member-text-3" data-dismiss="modal">Cancel</button>
+                    <button class="member-text-4" data-dismiss="modal" data-toggle="modal" data-target="#deleteAgent">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="libs/js/jquery-3.3.1.min.js"></script>
+    <script src="libs/js/popper.min.js"></script>
+    <script src="libs/js/bootstrap.min.js"></script>
+</body>
+</html>
